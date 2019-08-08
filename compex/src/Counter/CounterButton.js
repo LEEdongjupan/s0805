@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CounterButton = () => {
+const CounterButton = ({fn,amount ,text}) => {
 
     return(
-    <button onClick={()=>{ alert('aaa')}}>CLICK</button>
+    <button onClick={()=>{ fn(amount)}}>{text}</button>
     )
 }
 export default CounterButton
