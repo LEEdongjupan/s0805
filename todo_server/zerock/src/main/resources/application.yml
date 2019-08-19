@@ -1,0 +1,12 @@
+spring:
+  dataSource: 
+    url: jdbc:mysql://localhost:3306/jpa_ex?useSSL=false&serverTimezone=Asia/Seoul
+    username: jpa_user
+    password: jpa_user
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring.jpa.generate-ddl: false
+spring.jpa.show-sql: true
+spring.jpa.database: mysql
+spring.jpa.database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto: update
